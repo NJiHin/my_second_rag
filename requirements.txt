@@ -1,0 +1,13 @@
+langchain
+langchain-community
+langchain-huggingface
+langchain-text-splitters
+langchain-core
+langchain-chroma
+torch
+transformers
+accelerate
+bitsandbytes
+sentence-transformers
+chromadb
+pymupdf

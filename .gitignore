@@ -1,0 +1,53 @@
+# Claude Code and project documentation files
+CLAUDE.md
+claude.md
+progress.md
+
+# Test/default files to exclude
+default_rag.py
+
+# Python virtual environment
+venv/
+env/
+.venv/
+.env/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# ChromaDB vector database (large files)
+chroma_db/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Model cache directories (if any)
+models/
+.cache/
