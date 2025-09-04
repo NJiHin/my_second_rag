@@ -1,0 +1,48 @@
+Question,Answer
+How do I create a matrix filled with zeros in MATLAB?,"Use the zeros() function:
+```matlab
+% Create a 3x4 matrix of zeros
+A = zeros(3, 4);
+
+% Create a square 5x5 matrix of zeros
+B = zeros(5);
+
+% Create a 1D array (row vector) with 10 zeros
+C = zeros(1, 10)
+```"
+What is the syntax for a for loop in MATLAB?,"The basic syntax is:
+```matlab
+for variable = start:increment:end
+    % code to execute
+end
+
+% Examples:
+for i = 1:5
+    disp(i);  % prints 1, 2, 3, 4, 5
+end
+
+for j = 2:2:10
+    disp(j);  % prints 2, 4, 6, 8, 10
+end
+
+% Loop through array elements
+array = [1, 3, 5, 7];
+for element = array
+    disp(element);
+end
+```"
+How do I plot a simple graph in MATLAB?,"Use the plot() function:
+```matlab
+% Create data
+x = 1:10;
+y = x.^2;  % y = x squared
+
+% Plot the graph
+plot(x, y);
+
+% Add labels and title (optional)
+xlabel('X values');
+ylabel('Y values');
+title('Simple Graph: y = x²');
+grid on;  % adds grid lines
+```"
