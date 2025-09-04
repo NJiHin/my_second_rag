@@ -143,16 +143,6 @@ class SimpleRAG:
         # Retrieve relevant documents
         retrieved_docs = self.retriever.invoke(question)
         
-        # Debug logging for retrieval
-        print(f"DEBUG: Retrieved {len(retrieved_docs)} documents for query: '{question[:50]}...'")
-        for i, doc in enumerate(retrieved_docs):
-            print(f"DEBUG: Doc {i+1} preview: '{doc.page_content[:100]}...'")
-            print(f"DEBUG: Doc {i+1} metadata: {doc.metadata}")
-        print("-" * 50)
-        
-        # Format context for the prompt
-        formatted_context = self._format_docs(retrieved_docs)
-        
         # Generate answer using the RAG chain
         answer = self.rag_chain.invoke(question)
         
