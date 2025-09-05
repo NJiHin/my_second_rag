@@ -8,7 +8,6 @@ from data_ingestion import initialize_embeddings, initialize_vector_store, data_
 import torch
 import os
 
-
 class SimpleRAG:
     """Simple RAG system using LangChain and HuggingFace transformers."""
     
